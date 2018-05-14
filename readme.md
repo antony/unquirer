@@ -1,5 +1,7 @@
 ## Unquirer
 
+[![Build Status](https://travis-ci.org/antony/unquirer.svg?branch=master)](https://travis-ci.org/antony/unquirer)
+
 A wrapper for [Inquirer](https://www.npmjs.com/package/inquirer) to allow pre-answering questions with command line arguments
 
 ### Installation
