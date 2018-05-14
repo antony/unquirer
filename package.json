@@ -3,11 +3,14 @@
   "version": "1.0.0",
   "description": "Wrapper for inquirer to allow arguments to override answers",
   "main": "index.js",
-  "dependencies": {
-    "args-parser": "^1.1.0",
+  "peerDependencies": {
     "inquirer": "^5.2.0"
   },
+  "dependencies": {
+    "args-parser": "^1.1.0"
+  },
   "devDependencies": {
+    "inquirer": "^5.2.0",
     "ava": "^0.25.0"
   },
   "scripts": {

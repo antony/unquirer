@@ -5,7 +5,7 @@ const args = require('args-parser')
 const { partition } = require('./partition')
 const { validate } = require('./validator')
 
-module.exports = function (questions) {
+exports.prompt = function (questions) {
   const args = args(process.argv)
   const { truthy, falsy } = partition(questions, question => args.includes(question.name))
   const interactiveAnswers = await inquirer(falsy)
