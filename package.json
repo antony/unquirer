@@ -14,7 +14,7 @@
     "ava": "^0.25.0"
   },
   "scripts": {
-    "test": "ava **.spec.js"
+    "test": "ava ./lib/**.spec.js"
   },
   "author": "Antony Jones",
   "license": "MIT"

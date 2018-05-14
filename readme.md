@@ -68,7 +68,12 @@ Or you can pass in all the answers, totally non-interactive:
   node input.js --firstName="Jim" --lastName="Smith" --favColor="yellow"
 ```
 
-### Roadmap
+### Options
 
-Auto parse this-case to thisCase
-Document validation
+Options are passed as the second parameter to the `unquirer.prompt` method.
+
+There is currently only one option, `useCamelCase`, which defaults to true. This pption causes parameters like `--some-param` to result in the answer key `someParam`. In order to preserve dashes in your `question` `name`s, pass `{ useCamelCase: false }` as options.
+
+### Validation
+
+Validation works the same as it does in Inquirer, i.e. in your validation method, return `true` to pass validation, return `false` to fail with a default message, and return any `string` to fail with that specific message.
