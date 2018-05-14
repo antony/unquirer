@@ -34,7 +34,7 @@ Given the following highly opinionated version of the inquirer 'input' example, 
     {
       type: 'input',
       name: 'favColor',
-      message: 'What's your favorite color',
+      message: "What's your favorite color",
       validate: answer => {
         if (answer === 'yellow') { return true }
         return "You can only like yellow!"
@@ -71,5 +71,4 @@ Or you can pass in all the answers, totally non-interactive:
 ### Roadmap
 
 Auto parse this-case to thisCase
-Test no answers
 Document validation
