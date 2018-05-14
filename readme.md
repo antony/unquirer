@@ -26,7 +26,7 @@ Given the following highly opinionated version of the inquirer 'input' example, 
     {
       type: 'input',
       name: 'lastName',
-      message: 'What's your last name',
+      message: "What's your last name",
       filter: answer => {
         return 'Smith'
       }
